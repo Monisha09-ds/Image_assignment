@@ -12,7 +12,8 @@ def train_cifar(model, name, dm):
     checkpoint = ModelCheckpoint(monitor="val_loss", mode="min", dirpath=f"checkpoints/cifar_{name}", filename="best")
     
     trainer = L.Trainer(
-        max_epochs=20, # Shorter for demo/fine-tuning
+        # max_epochs=20, # Shorter for demo/fine-tuning
+        max_epochs=3,
         callbacks=[checkpoint],
         logger=logger,
         accelerator="auto",

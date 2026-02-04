@@ -20,7 +20,8 @@ def train_model(model_class, name, dm):
     
     # Trainer
     trainer = L.Trainer(
-        max_epochs=50,
+        # max_epochs=50,
+        max_epochs=5,
         callbacks=[early_stop, checkpoint],
         logger=logger,
         accelerator="auto",

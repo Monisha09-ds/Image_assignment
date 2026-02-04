@@ -205,3 +205,32 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Project Specific Ignores
+**/__pycache__/
+data/
+logs/
+logs_cifar/
+checkpoints/
+
+# Generated Data files
+*.npz
+*.npy
+*.pt
+*.pth
+*.ckpt
+*.csv
+
+# Assignment 1 & 2 outputs
+demo_*.png
+test_image.png
+test_image_*.png
+test_image_modified.png
+demo_*.jpg
+demo_*.jpeg
+
+# Assignment - Tracing (Tracking) outputs
+# If any video outputs are saved, they should be ignored here
+*.mp4
+*.mkv
+*.avi
